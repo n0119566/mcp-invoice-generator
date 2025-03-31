@@ -51,8 +51,6 @@ server.tool(
   },
   async ({ orders, fileName }) => {
     try {
-      // Generate the invoice for the last order in the list
-      // This simplifies handling multiple orders for now
       if (orders.items.length === 0) {
         return {
           content: [
